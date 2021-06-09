@@ -25,7 +25,7 @@
   
             <?php
 
-                $req = $bdd->query('SELECT * FROM articles');
+                $req = $bdd->query('SELECT * FROM articles ORDER BY id DESC');
                 while($data = $req->fetch()) { 
                     ?><div class="col-12 col-lg-4 d-flex justify-content-center">
                         <div class="card text-white bg-dark mt-5" style="width: 18rem;">
